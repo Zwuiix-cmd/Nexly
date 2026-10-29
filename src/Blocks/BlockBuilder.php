@@ -701,7 +701,7 @@ class BlockBuilder
 			$this->addComponent(new ChestObstructionBlockComponent($hasCollision ? ObstructionRule::SHAPE : ObstructionRule::NEVER));
 			$this->addComponent(new DestructibleByExplosionBlockComponent($block->getBreakInfo()->getBlastResistance()));
 			$this->addComponent(new DestructibleByMiningBlockComponent(/*$block->getBreakInfo()->getHardness() * 3.33334*/PHP_INT_MAX));
-			$this->addComponent(new DisplayNameBlockComponent("tile." . $this->getStringId() . ".name"));
+			$this->addComponent(new DisplayNameBlockComponent($title = "tile." . $this->getStringId() . ".name"));
 			$this->addComponent(new FrictionBlockComponent(max(0, 1 - $block->getFrictionFactor())));
 			$this->addComponent(new LightEmissionBlockComponent($block->getLightLevel()));
 			$this->addComponent(new LightDampeningBlockComponent($block->getLightFilter()));
@@ -750,7 +750,7 @@ class BlockBuilder
 
 			$containerSlotCount = null;
 			if (ComponentHelper::hasTile($block, $containerSlotCount)) {
-				$this->addComponent(new BlockEntityBlockComponent(true, $containerSlotCount));
+				$this->addComponent(new BlockEntityBlockComponent(true, $containerSlotCount, containerTitle: $title));
 			}
 			if (ComponentHelper::hasInteract($block)) {
 				$this->addComponent(new OnInteractBlockComponent());
