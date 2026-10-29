@@ -27,6 +27,9 @@ use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\FloatTag;
 
+/**
+ * @since 1.20.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ThrowableItemComponent extends DataDrivenItemComponent
 {

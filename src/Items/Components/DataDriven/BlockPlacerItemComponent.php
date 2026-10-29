@@ -34,9 +34,16 @@ use pocketmine\world\format\io\GlobalBlockStateHandlers;
 use function array_map;
 use function is_string;
 
+/**
+ * @since 1.20.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class BlockPlacerItemComponent extends DataDrivenItemComponent
 {
+	/**
+	 * @param bool $replaceBlockItem Requires format version 1.21.60 or later.
+	 * @param bool $alignedPlacement Requires format version 1.26.10 or later.
+	 */
 	public function __construct(
 		protected string $block,
 		protected array $useOn = [],

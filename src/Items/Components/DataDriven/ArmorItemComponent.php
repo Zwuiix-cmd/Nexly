@@ -32,6 +32,7 @@ use pocketmine\nbt\tag\StringTag;
 
 /**
  * @deprecated
+ * @since 1.16.100
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ArmorItemComponent extends DataDrivenItemComponent

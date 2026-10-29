@@ -26,6 +26,9 @@ use Attribute;
 use Nexly\Items\Components\DataDriven\Types\ItemRarity;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.21.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class RarityProperty extends PropertyItemComponent
 {

@@ -37,6 +37,9 @@ use pocketmine\nbt\tag\StringTag;
 use pocketmine\network\mcpe\convert\TypeConverter;
 use function array_map;
 
+/**
+ * @since 1.20.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class FoodItemComponent extends DataDrivenItemComponent
 {

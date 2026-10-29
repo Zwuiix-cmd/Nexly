@@ -27,6 +27,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\FloatTag;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.20.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ProjectileItemComponent extends DataDrivenItemComponent
 {

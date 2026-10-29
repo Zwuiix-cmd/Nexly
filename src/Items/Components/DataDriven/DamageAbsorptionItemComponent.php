@@ -27,6 +27,9 @@ use pocketmine\nbt\NBT;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;
 
+/**
+ * @since 1.21.20
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DamageAbsorptionItemComponent extends DataDrivenItemComponent
 {

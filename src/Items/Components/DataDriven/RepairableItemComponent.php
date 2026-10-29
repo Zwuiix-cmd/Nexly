@@ -29,6 +29,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;
 use function array_map;
 
+/**
+ * @since 1.20.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class RepairableItemComponent extends DataDrivenItemComponent
 {

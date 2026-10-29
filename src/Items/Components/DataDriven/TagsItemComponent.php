@@ -29,6 +29,9 @@ use pocketmine\nbt\tag\ListTag;
 use pocketmine\nbt\tag\StringTag;
 use function array_map;
 
+/**
+ * @since 1.20.50
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class TagsItemComponent extends DataDrivenItemComponent
 {

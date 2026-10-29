@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.21.40
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class BundleInteractionItemComponent extends DataDrivenItemComponent
 {

@@ -27,6 +27,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\StringTag;
 use function preg_match;
 
+/**
+ * @since 1.21.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DyeableItemComponent extends DataDrivenItemComponent
 {

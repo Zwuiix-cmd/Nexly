@@ -28,6 +28,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\IntTag;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.20.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class EnchantableItemComponent extends DataDrivenItemComponent
 {

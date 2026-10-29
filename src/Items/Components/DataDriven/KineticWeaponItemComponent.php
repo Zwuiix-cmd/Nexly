@@ -30,7 +30,7 @@ use pocketmine\nbt\tag\IntTag;
 
 /**
  * @see https://learn.microsoft.com/en-us/minecraft/creator/reference/content/itemreference/examples/itemcomponents/minecraft_kinetic_weapon?view=minecraft-bedrock-stable
- * @since 1.21.120
+ * @since 1.21.130
  * @internal
  */
 #[Attribute(Attribute::TARGET_CLASS)]

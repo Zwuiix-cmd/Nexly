@@ -33,6 +33,9 @@ use pocketmine\nbt\tag\StringTag;
 use pocketmine\network\mcpe\convert\TypeConverter;
 use function array_map;
 
+/**
+ * @since 1.21.40
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class StorageItemComponent extends DataDrivenItemComponent
 {

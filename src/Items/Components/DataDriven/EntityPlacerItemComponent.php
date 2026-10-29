@@ -32,6 +32,9 @@ use pocketmine\nbt\tag\StringTag;
 use pocketmine\world\format\io\GlobalBlockStateHandlers;
 use function array_map;
 
+/**
+ * @since 1.20.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class EntityPlacerItemComponent extends DataDrivenItemComponent
 {

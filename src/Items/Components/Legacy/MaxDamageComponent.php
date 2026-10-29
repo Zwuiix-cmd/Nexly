@@ -25,6 +25,9 @@ namespace Nexly\Items\Components\Legacy;
 use Attribute;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.10.0
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class MaxDamageComponent extends LegacyItemComponent
 {

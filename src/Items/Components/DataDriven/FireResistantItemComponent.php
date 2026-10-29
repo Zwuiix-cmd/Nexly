@@ -26,9 +26,15 @@ use Attribute;
 use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.21.110
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class FireResistantItemComponent extends DataDrivenItemComponent
 {
+	/**
+	 * @param bool $value Requires format version 1.21.120 or later.
+	 */
 	public function __construct(
 		protected bool $value = true
 	) {

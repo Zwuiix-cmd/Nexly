@@ -25,6 +25,9 @@ namespace Nexly\Items\Components\DataDriven\Property;
 use Attribute;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.20.20
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DamageProperty extends PropertyItemComponent
 {

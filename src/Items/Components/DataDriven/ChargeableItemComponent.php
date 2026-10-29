@@ -29,6 +29,7 @@ use pocketmine\nbt\tag\StringTag;
 
 /**
  * @deprecated
+ * @since 1.16.100
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ChargeableItemComponent extends DataDrivenItemComponent

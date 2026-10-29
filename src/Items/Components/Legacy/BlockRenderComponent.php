@@ -27,6 +27,9 @@ use pocketmine\block\Block;
 use pocketmine\nbt\tag\StringTag;
 use pocketmine\world\format\io\GlobalBlockStateHandlers;
 
+/**
+ * @since 1.10.0
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class BlockRenderComponent extends LegacyItemComponent
 {

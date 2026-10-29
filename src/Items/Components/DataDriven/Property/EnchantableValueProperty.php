@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\item\Item;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.20.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class EnchantableValueProperty extends PropertyItemComponent
 {

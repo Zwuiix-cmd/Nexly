@@ -29,6 +29,9 @@ use pocketmine\item\Item;
 use pocketmine\item\Potion;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.20.20
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class UseAnimationProperty extends PropertyItemComponent
 {

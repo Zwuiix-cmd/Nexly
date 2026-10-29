@@ -25,6 +25,9 @@ namespace Nexly\Items\Components\DataDriven\Property;
 use Attribute;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.20.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class MaxStackSizeProperty extends PropertyItemComponent
 {

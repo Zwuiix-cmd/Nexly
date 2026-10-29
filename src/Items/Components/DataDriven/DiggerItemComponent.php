@@ -32,6 +32,9 @@ use function array_map;
 use function implode;
 use function is_string;
 
+/**
+ * @since 1.20.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DiggerItemComponent extends DataDrivenItemComponent
 {

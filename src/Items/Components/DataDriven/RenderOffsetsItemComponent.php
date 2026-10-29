@@ -30,6 +30,7 @@ use function round;
 
 /**
  * @deprecated
+ * @since 1.16.100
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class RenderOffsetsItemComponent extends DataDrivenItemComponent

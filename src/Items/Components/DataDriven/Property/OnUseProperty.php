@@ -27,6 +27,7 @@ use pocketmine\nbt\tag\ByteTag;
 
 /**
  * @deprecated
+ * @since 1.16.100
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class OnUseProperty extends PropertyItemComponent

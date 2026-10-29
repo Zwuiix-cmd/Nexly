@@ -37,6 +37,9 @@ use function array_values;
 use function str_replace;
 use function strtolower;
 
+/**
+ * @since 1.10.0
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class SeedComponent extends LegacyItemComponent
 {

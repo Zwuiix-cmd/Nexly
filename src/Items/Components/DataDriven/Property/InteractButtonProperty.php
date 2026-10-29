@@ -27,6 +27,9 @@ use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\StringTag;
 use function is_string;
 
+/**
+ * @since 1.20.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class InteractButtonProperty extends PropertyItemComponent
 {

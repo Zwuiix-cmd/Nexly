@@ -38,6 +38,9 @@ use pocketmine\network\mcpe\convert\TypeConverter;
 use function array_map;
 use function is_string;
 
+/**
+ * @since 1.10.0
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class FoodComponent extends LegacyItemComponent
 {

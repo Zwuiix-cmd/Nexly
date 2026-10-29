@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.21.110
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class StorageWeightModifierItemComponent extends DataDrivenItemComponent
 {
