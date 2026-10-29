@@ -28,6 +28,7 @@ use Nexly\Blocks\Components\BlockComponent;
 use Nexly\Blocks\Components\BlockComponentIds;
 use Nexly\Blocks\Components\BlockEntityBlockComponent;
 use Nexly\Blocks\Components\BreathabilityBlockComponent;
+use Nexly\Blocks\Components\ChestObstructionBlockComponent;
 use Nexly\Blocks\Components\CollisionBoxBlockComponent;
 use Nexly\Blocks\Components\ConnectionRuleComponent;
 use Nexly\Blocks\Components\CraftingTableBlockComponent;
@@ -59,6 +60,7 @@ use Nexly\Blocks\Components\Types\Material;
 use Nexly\Blocks\Components\Types\MaterialType;
 use Nexly\Blocks\Components\Types\MovementType;
 use Nexly\Blocks\Components\Types\NoteInstrument;
+use Nexly\Blocks\Components\Types\ObstructionRule;
 use Nexly\Blocks\Components\Types\PrecipitationType;
 use Nexly\Blocks\Components\Types\RenderMethod;
 use Nexly\Blocks\Components\Types\StickyType;
@@ -693,8 +695,10 @@ class BlockBuilder
 	public function loadComponents(block $block, bool $autoload, bool $async = false) : void
 	{
 		if ($autoload) {
+			$hasCollision = !empty($block->getCollisionBoxes());
 			$this->addComponent(new BreathabilityBlockComponent($block->isTransparent() ? BreathabilityType::AIR : BreathabilityType::SOLID));
-			$this->addComponent(new CollisionBoxBlockComponent(!empty($block->getCollisionBoxes())));
+			$this->addComponent(new CollisionBoxBlockComponent($hasCollision));
+			$this->addComponent(new ChestObstructionBlockComponent($hasCollision ? ObstructionRule::SHAPE : ObstructionRule::NEVER));
 			$this->addComponent(new DestructibleByExplosionBlockComponent($block->getBreakInfo()->getBlastResistance()));
 			$this->addComponent(new DestructibleByMiningBlockComponent(/*$block->getBreakInfo()->getHardness() * 3.33334*/PHP_INT_MAX));
 			$this->addComponent(new DisplayNameBlockComponent("tile." . $this->getStringId() . ".name"));
@@ -757,7 +761,7 @@ class BlockBuilder
 				$this->addComponent(new SupportBlockComponent($shape));
 			}
 
-			$this->addComponent(new SelectionBoxBlockComponent(true));
+			$this->addComponent(new SelectionBoxBlockComponent($hasCollision));
 			$this->addComponent(new OnPlayerPlacingBlockComponent());
 		}
 
