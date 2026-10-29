@@ -24,9 +24,10 @@ namespace Nexly\Blocks\Components\Types;
 
 class PrecipitationType
 {
-	public const OBRAIN = "obrain";
-	public const OBSTRUCT_RAIN_ACCUMULATE_SNOW = "obstrant_rain_accumulate_snow";
-	public const ACCUMULATE_SNOW = "accumulate_snow";
+	public const OBSTRUCT_RAIN = "obstruct_rain";
+	public const OBRAIN = self::OBSTRUCT_RAIN;
+	public const OBSTRUCT_RAIN_ACCUMULATE_SNOW = "obstruct_rain_accumulate_snow";
+	public const ACCUMULATE_SNOW = self::OBSTRUCT_RAIN_ACCUMULATE_SNOW;
 	public const SNOW_LOGGING = "snowlogging";
 	public const NONE = "none";
 }

@@ -28,12 +28,20 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\StringTag;
 use function strtolower;
 
+/**
+ * @since 1.21.120
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class PrecipitationInteractionsBlockComponent extends BlockComponent
 {
 	public function __construct(
 		protected string $precipitation = PrecipitationType::NONE,
 	) {
+		$this->precipitation = match (strtolower($this->precipitation)) {
+			"obrain" => PrecipitationType::OBSTRUCT_RAIN,
+			"obstrant_rain_accumulate_snow", "accumulate_snow" => PrecipitationType::OBSTRUCT_RAIN_ACCUMULATE_SNOW,
+			default => $this->precipitation,
+		};
 	}
 
 	public function getName() : string
@@ -47,6 +55,6 @@ class PrecipitationInteractionsBlockComponent extends BlockComponent
 	public function toNBT() : CompoundTag
 	{
 		return CompoundTag::create()
-			->setTag("precipitation_behavior", new StringTag(strtolower($this->precipitation)));
+			->setTag("precipitation_behavior", new StringTag($this->precipitation));
 	}
 }

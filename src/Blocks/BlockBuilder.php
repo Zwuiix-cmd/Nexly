@@ -706,7 +706,7 @@ class BlockBuilder
 			$this->addComponent(new MovableBlockComponent(MovementType::from($block), StickyType::from($block)));
 			$this->addComponent(new PrecipitationInteractionsBlockComponent(match(true) {
 				$block instanceof Flowable => PrecipitationType::OBSTRUCT_RAIN_ACCUMULATE_SNOW,
-				$block->isSolid(), $block instanceof Transparent => PrecipitationType::OBRAIN,
+				$block->isSolid(), $block instanceof Transparent => PrecipitationType::OBSTRUCT_RAIN,
 				default => PrecipitationType::NONE
 			}));
 			$this->addComponent(new MaterialInstancesBlockComponent([new Material($this->getName(), renderMethod: match(true) {
