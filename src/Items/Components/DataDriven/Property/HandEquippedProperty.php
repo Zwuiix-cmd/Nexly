@@ -26,7 +26,7 @@ use Attribute;
 use pocketmine\nbt\tag\ByteTag;
 
 /**
- * @since 1.20.20
+ * @since 1.20.30
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class HandEquippedProperty extends PropertyItemComponent

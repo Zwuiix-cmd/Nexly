@@ -35,7 +35,7 @@ use function array_map;
 use function is_string;
 
 /**
- * @since 1.20.10
+ * @since 1.21.50
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class BlockPlacerItemComponent extends DataDrivenItemComponent
