@@ -704,7 +704,7 @@ class BlockBuilder
 			$this->addComponent(new DisplayNameBlockComponent("tile." . $this->getStringId() . ".name"));
 			$this->addComponent(new FrictionBlockComponent(max(0, 1 - $block->getFrictionFactor())));
 			$this->addComponent(new LightEmissionBlockComponent($block->getLightLevel()));
-			$this->addComponent(new LightDampeningBlockComponent(max(0, 1 - $block->getLightFilter())));
+			$this->addComponent(new LightDampeningBlockComponent($block->getLightFilter()));
 			$this->addComponent(new EntityFallOnBlockComponent(3));
 			$this->addComponent(new InstrumentSoundBlockComponent(NoteInstrument::from($block)));
 			$this->addComponent(new MovableBlockComponent(MovementType::from($block), StickyType::from($block)));
@@ -719,8 +719,8 @@ class BlockBuilder
 				default => RenderMethod::BLEND,
 			})]));
 
-			if ($block->getFlammability() > 0) {
-				$this->addComponent(new FlammableBlockComponent($block->getFlameEncouragement()));
+			if ($block->getFlameEncouragement() > 0 || $block->getFlammability() > 0) {
+				$this->addComponent(new FlammableBlockComponent($block->getFlameEncouragement(), $block->getFlammability()));
 			}
 			if ($block->canBeReplaced()) {
 				$this->addComponent(new ReplaceableBlockComponent());
@@ -742,7 +742,7 @@ class BlockBuilder
 				$this->addComponent(new CraftingTableBlockComponent(["crafting_table"], 3));
 			}
 			if ($block instanceof Grass) {
-				$this->addComponent(new MapColorBlockComponent("#7CBA46", TintMethod::from($this)));
+				$this->addComponent(new MapColorBlockComponent("#7CBA46", TintMethod::from($block)));
 			} elseif ($block instanceof Colored) {
 				$color = $block->getColor()->getRgbValue();
 				$this->addComponent(new MapColorBlockComponent([$color->getR(), $color->getG(), $color->getB()], TintMethod::from($block)));
