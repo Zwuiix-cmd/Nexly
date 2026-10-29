@@ -36,7 +36,7 @@ use pocketmine\network\mcpe\NetworkSession;
 use pocketmine\network\mcpe\protocol\StartGamePacket;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
-use zwuiix\extpack\ExtPack;
+use zwuiix\remotepack\RemotePack;
 use function array_merge;
 use function count;
 
@@ -52,7 +52,7 @@ class Nexly extends PluginBase
 
 	protected function onEnable() : void
 	{
-		ExtPack::fromUrl(self::PACK_URL . $this->getDescription()->getVersion() . ".zip");
+		RemotePack::fromUrl(self::PACK_URL . $this->getDescription()->getVersion() . ".zip");
 
 		$config = $this->getConfig();
 		if ($config->get("enable-block-breaking", true)) {
