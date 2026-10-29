@@ -68,16 +68,16 @@
         },
         {
             "name": "axolotl-pm/bedrock-block-upgrade-schema",
-            "version": "5.4.1",
+            "version": "5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/axolotl-pm/BedrockBlockUpgradeSchema.git",
-                "reference": "c4d9f5eede5e6fd8c25d38c91987ca6f916fff58"
+                "reference": "25b40fbb4866caab71d21793ddbe9636acc1fb05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/axolotl-pm/BedrockBlockUpgradeSchema/zipball/c4d9f5eede5e6fd8c25d38c91987ca6f916fff58",
-                "reference": "c4d9f5eede5e6fd8c25d38c91987ca6f916fff58",
+                "url": "https://api.github.com/repos/axolotl-pm/BedrockBlockUpgradeSchema/zipball/25b40fbb4866caab71d21793ddbe9636acc1fb05",
+                "reference": "25b40fbb4866caab71d21793ddbe9636acc1fb05",
                 "shasum": ""
             },
             "type": "library",
@@ -88,22 +88,22 @@
             "description": "Schemas describing how to upgrade saved block data in older Minecraft: Bedrock Edition world saves",
             "support": {
                 "issues": "https://github.com/axolotl-pm/BedrockBlockUpgradeSchema/issues",
-                "source": "https://github.com/axolotl-pm/BedrockBlockUpgradeSchema/tree/5.4.1"
+                "source": "https://github.com/axolotl-pm/BedrockBlockUpgradeSchema/tree/5.5.0"
             },
-            "time": "2026-09-17T18:30:31+00:00"
+            "time": "2026-10-27T22:27:16+00:00"
         },
         {
             "name": "axolotl-pm/bedrock-data",
-            "version": "6.9.0+bedrock-1.26.50",
+            "version": "6.10.0+bedrock-1.26.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/axolotl-pm/BedrockData.git",
-                "reference": "488f81d2ab95841337fb9331efe9d6b74ceddb07"
+                "reference": "aeb5f24894f1873dde6f7b4f39490ad85ce59094"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/axolotl-pm/BedrockData/zipball/488f81d2ab95841337fb9331efe9d6b74ceddb07",
-                "reference": "488f81d2ab95841337fb9331efe9d6b74ceddb07",
+                "url": "https://api.github.com/repos/axolotl-pm/BedrockData/zipball/aeb5f24894f1873dde6f7b4f39490ad85ce59094",
+                "reference": "aeb5f24894f1873dde6f7b4f39490ad85ce59094",
                 "shasum": ""
             },
             "type": "library",
@@ -114,22 +114,22 @@
             "description": "Blobs of data generated from Minecraft: Bedrock Edition, used by PocketMine-MP",
             "support": {
                 "issues": "https://github.com/axolotl-pm/BedrockData/issues",
-                "source": "https://github.com/axolotl-pm/BedrockData/tree/6.9.0+bedrock-1.26.50"
+                "source": "https://github.com/axolotl-pm/BedrockData/tree/bedrock-1.26.60"
             },
-            "time": "2026-09-17T18:27:03+00:00"
+            "time": "2026-10-27T22:46:26+00:00"
         },
         {
             "name": "axolotl-pm/bedrock-item-upgrade-schema",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/axolotl-pm/BedrockItemUpgradeSchema.git",
-                "reference": "6ace6bbf1d67832cbae32f6e67bd15e1fc87af22"
+                "reference": "1945fa451cfba4a0aa7b738da697f7e5687d7b45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/axolotl-pm/BedrockItemUpgradeSchema/zipball/6ace6bbf1d67832cbae32f6e67bd15e1fc87af22",
-                "reference": "6ace6bbf1d67832cbae32f6e67bd15e1fc87af22",
+                "url": "https://api.github.com/repos/axolotl-pm/BedrockItemUpgradeSchema/zipball/1945fa451cfba4a0aa7b738da697f7e5687d7b45",
+                "reference": "1945fa451cfba4a0aa7b738da697f7e5687d7b45",
                 "shasum": ""
             },
             "type": "library",
@@ -140,22 +140,22 @@
             "description": "JSON schemas for upgrading items found in older Minecraft: Bedrock world saves",
             "support": {
                 "issues": "https://github.com/axolotl-pm/BedrockItemUpgradeSchema/issues",
-                "source": "https://github.com/axolotl-pm/BedrockItemUpgradeSchema/tree/1.19.0"
+                "source": "https://github.com/axolotl-pm/BedrockItemUpgradeSchema/tree/1.20.0"
             },
-            "time": "2026-09-17T18:43:14+00:00"
+            "time": "2026-10-27T22:38:27+00:00"
         },
         {
             "name": "axolotl-pm/bedrock-protocol",
-            "version": "63.0.1+bedrock-1.26.50",
+            "version": "64.0.0+bedrock-1.26.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/axolotl-pm/BedrockProtocol.git",
-                "reference": "7ff605d5b071d46c694d2b71bc8af4514156dbc2"
+                "reference": "f9d8b40da3940cef8242b0da34ba41fe49ea7364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/axolotl-pm/BedrockProtocol/zipball/7ff605d5b071d46c694d2b71bc8af4514156dbc2",
-                "reference": "7ff605d5b071d46c694d2b71bc8af4514156dbc2",
+                "url": "https://api.github.com/repos/axolotl-pm/BedrockProtocol/zipball/f9d8b40da3940cef8242b0da34ba41fe49ea7364",
+                "reference": "f9d8b40da3940cef8242b0da34ba41fe49ea7364",
                 "shasum": ""
             },
             "require": {
@@ -187,9 +187,58 @@
             "description": "An implementation of the Minecraft: Bedrock Edition protocol in PHP",
             "support": {
                 "issues": "https://github.com/axolotl-pm/BedrockProtocol/issues",
-                "source": "https://github.com/axolotl-pm/BedrockProtocol/tree/63.0.1+bedrock-1.26.50"
+                "source": "https://github.com/axolotl-pm/BedrockProtocol/tree/64.0.0+bedrock-1.26.60"
             },
-            "time": "2026-10-14T20:41:43+00:00"
+            "time": "2026-10-26T06:25:21+00:00"
+        },
+        {
+            "name": "axolotl-pm/nethernet",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/axolotl-pm/NetherNet.git",
+                "reference": "6ecacdaed3b0605a6a523235e5536f9c09ea56fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/axolotl-pm/NetherNet/zipball/6ecacdaed3b0605a6a523235e5536f9c09ea56fd",
+                "reference": "6ecacdaed3b0605a6a523235e5536f9c09ea56fd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-encoding": "~1.0.0",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "ext-sockets": "*",
+                "ext-webrtc": "*",
+                "php": "^8.1",
+                "php-64bit": "*",
+                "php-ipv6": "*",
+                "pocketmine/log": "^0.4.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "2.1.46",
+                "phpstan/phpstan-phpunit": "^2.0.0",
+                "phpstan/phpstan-strict-rules": "^2.0.0",
+                "phpunit/phpunit": "^10.5.24"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pocketmine\\nethernet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "description": "A NetherNet (WebRTC) transport implementation written in PHP",
+            "support": {
+                "issues": "https://github.com/axolotl-pm/NetherNet/issues",
+                "source": "https://github.com/axolotl-pm/NetherNet/tree/0.3.1"
+            },
+            "time": "2026-10-16T02:35:36+00:00"
         },
         {
             "name": "axolotl-pm/pocketmine-mp",
@@ -197,20 +246,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/axolotl-pm/PocketMine-MP",
-                "reference": "f1b97c443824d38f09ef4b83c2470c93d17b11cc"
+                "reference": "61eb9b4e23457145efd39ae4785825d4045c765f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/axolotl-pm/PocketMine-MP/zipball/f1b97c443824d38f09ef4b83c2470c93d17b11cc",
-                "reference": "f1b97c443824d38f09ef4b83c2470c93d17b11cc",
+                "url": "https://api.github.com/repos/axolotl-pm/PocketMine-MP/zipball/61eb9b4e23457145efd39ae4785825d4045c765f",
+                "reference": "61eb9b4e23457145efd39ae4785825d4045c765f",
                 "shasum": ""
             },
             "require": {
                 "adhocore/json-comment": "~1.2.0",
-                "axolotl-pm/bedrock-block-upgrade-schema": "~5.4.1+bedrock-1.26.50",
-                "axolotl-pm/bedrock-data": "~6.9.0+bedrock-1.26.50",
-                "axolotl-pm/bedrock-item-upgrade-schema": "~1.19.0+bedrock-1.26.50",
-                "axolotl-pm/bedrock-protocol": "~63.0.1+bedrock-1.26.50",
+                "axolotl-pm/bedrock-block-upgrade-schema": "~5.5.0+bedrock-1.26.60",
+                "axolotl-pm/bedrock-data": "~6.10.0+bedrock-1.26.60",
+                "axolotl-pm/bedrock-item-upgrade-schema": "~1.20.0+bedrock-1.26.60",
+                "axolotl-pm/bedrock-protocol": "~64.0.0+bedrock-1.26.60",
+                "axolotl-pm/nethernet": "^0.3.1",
                 "axolotl-pm/xoroshiro128pp": "^0.1.0",
                 "composer-runtime-api": "^2.0",
                 "ext-chunkutils2": "^0.3.1",
@@ -306,7 +356,7 @@
             ],
             "description": "A server software for Minecraft: Bedrock Edition written in PHP",
             "homepage": "https://pmmp.io",
-            "time": "2026-10-15T00:34:18+00:00"
+            "time": "2026-10-28T00:00:08+00:00"
         },
         {
             "name": "axolotl-pm/xoroshiro128pp",
@@ -552,16 +602,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.5.1",
+            "version": "3.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "528948210cc46f967a4b98e83b19e76f2b504993"
+                "reference": "9dfce66f1e97360ea5e6d3e38ab14277e4cc591e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/528948210cc46f967a4b98e83b19e76f2b504993",
-                "reference": "528948210cc46f967a4b98e83b19e76f2b504993",
+                "url": "https://api.github.com/repos/composer/semver/zipball/9dfce66f1e97360ea5e6d3e38ab14277e4cc591e",
+                "reference": "9dfce66f1e97360ea5e6d3e38ab14277e4cc591e",
                 "shasum": ""
             },
             "require": {
@@ -613,7 +663,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.5.1"
+                "source": "https://github.com/composer/semver/tree/3.5.2"
             },
             "funding": [
                 {
@@ -625,7 +675,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-05T13:12:12+00:00"
+            "time": "2026-10-22T15:37:26+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -2370,16 +2420,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v8.1.9",
+            "version": "v8.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "630e74196a2635ec0f06c12bd3fb47cfedf85157"
+                "reference": "5b6d9b127ec27bc6db59bf65e2e37b6fe5b00083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/630e74196a2635ec0f06c12bd3fb47cfedf85157",
-                "reference": "630e74196a2635ec0f06c12bd3fb47cfedf85157",
+                "url": "https://api.github.com/repos/symfony/console/zipball/5b6d9b127ec27bc6db59bf65e2e37b6fe5b00083",
+                "reference": "5b6d9b127ec27bc6db59bf65e2e37b6fe5b00083",
                 "shasum": ""
             },
             "require": {
@@ -2446,7 +2496,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v8.1.9"
+                "source": "https://github.com/symfony/console/tree/v8.1.10"
             },
             "funding": [
                 {
@@ -2466,7 +2516,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-12T19:11:16+00:00"
+            "time": "2026-10-28T11:16:19+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -2777,16 +2827,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v8.1.8",
+            "version": "v8.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "bd4fed193a3132c91c5c93595cbfc78988915822"
+                "reference": "2f4c0f26106520d82e1b71759d2fb8d32d8b7a43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/bd4fed193a3132c91c5c93595cbfc78988915822",
-                "reference": "bd4fed193a3132c91c5c93595cbfc78988915822",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/2f4c0f26106520d82e1b71759d2fb8d32d8b7a43",
+                "reference": "2f4c0f26106520d82e1b71759d2fb8d32d8b7a43",
                 "shasum": ""
             },
             "require": {
@@ -2821,7 +2871,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v8.1.8"
+                "source": "https://github.com/symfony/finder/tree/v8.1.10"
             },
             "funding": [
                 {
@@ -2841,20 +2891,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-26T06:33:49+00:00"
+            "time": "2026-10-19T17:00:07+00:00"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v8.1.0",
+            "version": "v8.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "88f9c561f678a02d54b897014049fa839e33ff82"
+                "reference": "68cc43038d234c69d510c62f37bd0058b40d548a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/88f9c561f678a02d54b897014049fa839e33ff82",
-                "reference": "88f9c561f678a02d54b897014049fa839e33ff82",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/68cc43038d234c69d510c62f37bd0058b40d548a",
+                "reference": "68cc43038d234c69d510c62f37bd0058b40d548a",
                 "shasum": ""
             },
             "require": {
@@ -2892,7 +2942,7 @@
                 "options"
             ],
             "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v8.1.0"
+                "source": "https://github.com/symfony/options-resolver/tree/v8.1.10"
             },
             "funding": [
                 {
@@ -2912,20 +2962,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-29T05:06:50+00:00"
+            "time": "2026-10-18T14:56:39+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.43.0",
+            "version": "v1.43.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "5cac8f4db97208823aa353f59a01faad2da52c75"
+                "reference": "5a8f33c87aeecffce24e721b5064fab05f4becf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/5cac8f4db97208823aa353f59a01faad2da52c75",
-                "reference": "5cac8f4db97208823aa353f59a01faad2da52c75",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/5a8f33c87aeecffce24e721b5064fab05f4becf8",
+                "reference": "5a8f33c87aeecffce24e721b5064fab05f4becf8",
                 "shasum": ""
             },
             "require": {
@@ -2974,7 +3024,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.43.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.43.3"
             },
             "funding": [
                 {
@@ -2994,7 +3044,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-25T15:46:47+00:00"
+            "time": "2026-10-15T09:18:53+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -3407,16 +3457,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v8.1.9",
+            "version": "v8.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "59a682fd049b2d4d37c444f5ac21b7d01b8c7189"
+                "reference": "08aa69fa0998bb65a089f9e148a2c0f8b391398e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/59a682fd049b2d4d37c444f5ac21b7d01b8c7189",
-                "reference": "59a682fd049b2d4d37c444f5ac21b7d01b8c7189",
+                "url": "https://api.github.com/repos/symfony/process/zipball/08aa69fa0998bb65a089f9e148a2c0f8b391398e",
+                "reference": "08aa69fa0998bb65a089f9e148a2c0f8b391398e",
                 "shasum": ""
             },
             "require": {
@@ -3448,7 +3498,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v8.1.9"
+                "source": "https://github.com/symfony/process/tree/v8.1.10"
             },
             "funding": [
                 {
@@ -3468,7 +3518,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-08T16:57:43+00:00"
+            "time": "2026-10-25T14:40:25+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -3625,16 +3675,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v8.1.9",
+            "version": "v8.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "07fb208558f941eab50ec49c89c2a6a93fb11f01"
+                "reference": "6c6110979c0150393bbb336170e286d51ab4d76c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/07fb208558f941eab50ec49c89c2a6a93fb11f01",
-                "reference": "07fb208558f941eab50ec49c89c2a6a93fb11f01",
+                "url": "https://api.github.com/repos/symfony/string/zipball/6c6110979c0150393bbb336170e286d51ab4d76c",
+                "reference": "6c6110979c0150393bbb336170e286d51ab4d76c",
                 "shasum": ""
             },
             "require": {
@@ -3691,7 +3741,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v8.1.9"
+                "source": "https://github.com/symfony/string/tree/v8.1.10"
             },
             "funding": [
                 {
@@ -3711,7 +3761,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-03T15:16:03+00:00"
+            "time": "2026-10-23T17:06:53+00:00"
         }
     ],
     "aliases": [],
