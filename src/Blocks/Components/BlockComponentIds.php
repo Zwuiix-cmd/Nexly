@@ -53,7 +53,10 @@ class BlockComponentIds
 	public const CHEST_OBSTRUCTION = "minecraft:chest_obstruction";
 	public const SOUND = "minecraft:sound";
 	public const BLOCK_ENTITY = "minecraft:block_entity";
+	public const ENCHANTMENT_POWER_TRANSMITTER = "minecraft:enchantment_power_transmitter";
 	public const INSTRUMENT_SOUND = "minecraft:instrument_sound";
+	public const NEIGHBOR_CHANGE = "minecraft:neighbor_change";
+	public const VIBRATION_PROPERTIES = "minecraft:vibration_properties";
 	public const CRAFTING_TABLE = "minecraft:crafting_table";
 	public const DESTRUCTION_PARTICLES = "minecraft:destruction_particles";
 	public const LOOT = "minecraft:loot";

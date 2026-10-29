@@ -28,12 +28,21 @@ use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.26.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class BlockEntityBlockComponent extends BlockComponent
 {
+	/**
+	 * @param bool $entityStorage Requires format version 1.26.60 and Upcoming Creator Features.
+	 * @param ?string $containerTitle Requires format version 1.26.60 and Upcoming Creator Features.
+	 */
 	public function __construct(
 		private readonly bool $dynamicProperties = false,
 		private readonly ?int $containerSlotCount = null,
+		private readonly bool $entityStorage = false,
+		private readonly ?string $containerTitle = null,
 	) {
 		if ($containerSlotCount !== null && ($containerSlotCount < 1 || $containerSlotCount > 54)) {
 			throw new InvalidArgumentException("Container slot count must be between 1 and 54.");
@@ -56,9 +65,19 @@ class BlockEntityBlockComponent extends BlockComponent
 		$nbt = CompoundTag::create()
 			->setTag("dynamic_properties", new ByteTag($this->dynamicProperties));
 
-		if ($this->containerSlotCount !== null) {
-			$nbt->setTag("container", CompoundTag::create()
-				->setTag("slot_count", new IntTag($this->containerSlotCount)));
+		if ($this->entityStorage) {
+			$nbt->setTag("entity_storage", new ByteTag(true));
+		}
+
+		if ($this->containerSlotCount !== null || $this->containerTitle !== null) {
+			$container = CompoundTag::create();
+			if ($this->containerSlotCount !== null) {
+				$container->setTag("slot_count", new IntTag($this->containerSlotCount));
+			}
+			if ($this->containerTitle !== null) {
+				$container->setString("title", $this->containerTitle);
+			}
+			$nbt->setTag("container", $container);
 		}
 
 		return $nbt;
