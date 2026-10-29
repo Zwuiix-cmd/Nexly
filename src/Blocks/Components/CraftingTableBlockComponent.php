@@ -32,6 +32,9 @@ use function array_map;
 use function count;
 use function strlen;
 
+/**
+ * @since 1.19.50
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class CraftingTableBlockComponent extends BlockComponent
 {

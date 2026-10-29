@@ -25,6 +25,9 @@ namespace Nexly\Blocks\Components;
 use Attribute;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.21.60
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ItemVisualBlockComponent extends BlockComponent
 {

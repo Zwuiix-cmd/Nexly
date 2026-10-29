@@ -29,6 +29,9 @@ use pocketmine\nbt\tag\FloatTag;
 use pocketmine\nbt\tag\ListTag;
 use function array_map;
 
+/**
+ * @since 1.21.50
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DestructibleByMiningBlockComponent extends BlockComponent
 {

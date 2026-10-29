@@ -25,6 +25,9 @@ namespace Nexly\Blocks\Components;
 use Attribute;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.16.100
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class LootBlockComponent extends BlockComponent
 {

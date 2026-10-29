@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.19.40
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class LightDampeningBlockComponent extends BlockComponent
 {

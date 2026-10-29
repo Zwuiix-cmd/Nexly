@@ -35,6 +35,9 @@ use function array_map;
 use function array_unique;
 use function count;
 
+/**
+ * @since 1.21.120
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class RedstoneProducerBlockComponent extends BlockComponent
 {

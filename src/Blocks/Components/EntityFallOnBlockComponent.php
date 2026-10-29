@@ -27,6 +27,9 @@ use InvalidArgumentException;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\FloatTag;
 
+/**
+ * @since 1.20.80
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class EntityFallOnBlockComponent extends BlockComponent
 {

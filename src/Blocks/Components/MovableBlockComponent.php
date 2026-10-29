@@ -23,11 +23,12 @@
 namespace Nexly\Blocks\Components;
 
 use Attribute;
-use InvalidArgumentException;
 use Nexly\Blocks\Components\Types\MovementType;
-use Nexly\Blocks\Components\Types\StickyType;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.21.100
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class MovableBlockComponent extends BlockComponent
 {
@@ -35,9 +36,6 @@ class MovableBlockComponent extends BlockComponent
 		protected string $movementType = MovementType::PUSH_PULL,
 		protected ?string $sticky = null
 	) {
-		if ($sticky === StickyType::SAME && $movementType !== MovementType::PUSH_PULL) {
-			throw new InvalidArgumentException('Sticky type SAME only works with push_pull movement.');
-		}
 	}
 
 	public function getName() : string

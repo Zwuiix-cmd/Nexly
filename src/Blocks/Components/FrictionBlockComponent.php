@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\FloatTag;
 
+/**
+ * @since 1.16.100
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class FrictionBlockComponent extends BlockComponent
 {

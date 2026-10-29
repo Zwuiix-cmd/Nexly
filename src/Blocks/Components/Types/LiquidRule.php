@@ -40,7 +40,7 @@ class LiquidRule
 		protected string            $liquidType = LiquidType::WATER,
 		protected string            $onLiquidTouches = LiquidTouchAction::BLOCKING,
 		protected array             $stopsLiquidFlowingFromDirection = [],
-		protected bool              $useLiquidClipping = false,
+		protected ?bool             $useLiquidClipping = null,
 	) {
 	}
 
@@ -50,11 +50,14 @@ class LiquidRule
 			fn (string $direction) => new StringTag($direction),
 			$this->stopsLiquidFlowingFromDirection
 		);
-		return CompoundTag::create()
+		$nbt = CompoundTag::create()
 			->setTag("canContainLiquid", new ByteTag($this->canContainLiquid))
 			->setTag("liquidType", new StringTag($this->liquidType))
 			->setTag("onLiquidTouches", new StringTag($this->onLiquidTouches))
-			->setTag("stopsLiquidFromDirection", new ListTag(array_values($liquidsDirection), NBT::TAG_String))
-			->setTag("useLiquidClipping", new ByteTag($this->useLiquidClipping));
+			->setTag("stopsLiquidFromDirection", new ListTag(array_values($liquidsDirection), NBT::TAG_String));
+		if ($this->useLiquidClipping !== null) {
+			$nbt->setTag("useLiquidClipping", new ByteTag($this->useLiquidClipping));
+		}
+		return $nbt;
 	}
 }

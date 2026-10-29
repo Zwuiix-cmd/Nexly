@@ -29,6 +29,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\FloatTag;
 use pocketmine\nbt\tag\ListTag;
 
+/**
+ * @since 1.21.130
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class LeashableBlockComponent extends BlockComponent
 {

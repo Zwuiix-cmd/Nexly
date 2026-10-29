@@ -28,6 +28,9 @@ use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\IntTag;
 
+/**
+ * @since 1.21.130
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class RedstoneConsumerBlockComponent extends BlockComponent
 {

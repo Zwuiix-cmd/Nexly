@@ -30,6 +30,9 @@ use pocketmine\nbt\tag\FloatTag;
 use pocketmine\nbt\tag\IntTag;
 use pocketmine\network\mcpe\protocol\types\BlockPosition;
 
+/**
+ * @since 1.21.100
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class RandomOffsetBlockComponent extends BlockComponent
 {

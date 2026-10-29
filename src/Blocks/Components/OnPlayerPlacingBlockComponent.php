@@ -27,7 +27,7 @@ use pocketmine\nbt\tag\CompoundTag;
 
 /**
  * @see CustomComponentsBlockComponent
- * @deprecated
+ * @since 1.16.100
  */
 #[Attribute(Attribute::TARGET_CLASS)]
 class OnPlayerPlacingBlockComponent extends BlockComponent

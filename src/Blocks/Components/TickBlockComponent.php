@@ -28,6 +28,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\IntTag;
 use pocketmine\nbt\tag\ListTag;
 
+/**
+ * @since 1.20.80
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class TickBlockComponent extends BlockComponent
 {

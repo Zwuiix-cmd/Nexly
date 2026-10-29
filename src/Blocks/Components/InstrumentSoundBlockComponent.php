@@ -27,6 +27,9 @@ use InvalidArgumentException;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.26.30
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class InstrumentSoundBlockComponent extends BlockComponent
 {

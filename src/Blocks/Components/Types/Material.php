@@ -44,9 +44,6 @@ class Material
 		if ($ambientOcclusion < 0.0 || $ambientOcclusion > 10.0) {
 			throw new InvalidArgumentException("Ambient occlusion must be between 0.0 and 10.0.");
 		}
-		if ($alphaMaskedTint && ($this->tintMethod === TintMethod::NONE || $this->renderMethod !== RenderMethod::OPAQUE)) {
-			throw new InvalidArgumentException("Alpha-masked tint requires a non-none tint method and opaque rendering.");
-		}
 	}
 
 	public function getTarget() : string

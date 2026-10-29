@@ -27,6 +27,9 @@ use Nexly\Blocks\Components\Types\ObstructionRule;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.26.10
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ChestObstructionBlockComponent extends BlockComponent
 {

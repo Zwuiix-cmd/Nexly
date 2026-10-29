@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.16.100
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class CustomComponentsBlockComponent extends BlockComponent
 {

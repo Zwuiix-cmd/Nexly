@@ -28,6 +28,9 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;
 use function array_map;
 
+/**
+ * @since 1.19.60
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class PlacementFilterBlockComponent extends BlockComponent
 {

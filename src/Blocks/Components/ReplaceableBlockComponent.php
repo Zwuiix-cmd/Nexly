@@ -25,6 +25,9 @@ namespace Nexly\Blocks\Components;
 use Attribute;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.21.70
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ReplaceableBlockComponent extends BlockComponent
 {
@@ -33,7 +36,7 @@ class ReplaceableBlockComponent extends BlockComponent
 	}
 
 	/**
-	 * Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted
+	 * Allows another block to replace this block in the same position.
 	 */
 	public function getName() : string
 	{

@@ -33,6 +33,9 @@ use pocketmine\nbt\tag\ListTag;
 use function array_map;
 use function count;
 
+/**
+ * @since 1.19.50
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class CollisionBoxBlockComponent extends BlockComponent
 {

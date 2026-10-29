@@ -31,6 +31,9 @@ use pocketmine\nbt\tag\ListTag;
 use pocketmine\nbt\tag\StringTag;
 use function array_map;
 
+/**
+ * @since 1.21.130
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class ConnectionRuleComponent extends BlockComponent
 {

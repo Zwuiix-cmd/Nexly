@@ -23,12 +23,16 @@
 namespace Nexly\Blocks\Components;
 
 use Attribute;
+use InvalidArgumentException;
 use Nexly\Blocks\Components\Types\LiquidRule;
 use pocketmine\nbt\NBT;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;
 use function array_map;
 
+/**
+ * @since 1.21.60
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class LiquidDetectionComponent extends BlockComponent
 {
@@ -38,10 +42,13 @@ class LiquidDetectionComponent extends BlockComponent
 	public function __construct(
 		protected array $rules,
 	) {
+		if (empty($this->rules)) {
+			throw new InvalidArgumentException("minecraft:liquid_detection requires at least one detection rule.");
+		}
 	}
 
 	/**
-	 * Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted
+	 * Defines how this block behaves when detecting liquid.
 	 */
 	public function getName() : string
 	{

@@ -26,6 +26,9 @@ use Attribute;
 use Nexly\Blocks\Components\Types\Material;
 use pocketmine\nbt\tag\CompoundTag;
 
+/**
+ * @since 1.19.40
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class MaterialInstancesBlockComponent extends BlockComponent
 {

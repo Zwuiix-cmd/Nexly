@@ -26,6 +26,9 @@ use Attribute;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\StringTag;
 
+/**
+ * @since 1.19.60
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DisplayNameBlockComponent extends BlockComponent
 {

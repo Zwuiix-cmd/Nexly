@@ -38,6 +38,9 @@ use function is_array;
 use function is_bool;
 use function strval;
 
+/**
+ * @since 1.19.40
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class GeometryBlockComponent extends BlockComponent
 {

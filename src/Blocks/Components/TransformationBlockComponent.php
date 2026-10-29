@@ -33,6 +33,9 @@ use function fmod;
 use function intdiv;
 use const PHP_FLOAT_EPSILON;
 
+/**
+ * @since 1.19.80
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class TransformationBlockComponent extends BlockComponent
 {

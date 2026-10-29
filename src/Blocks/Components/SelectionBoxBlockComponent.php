@@ -34,6 +34,9 @@ use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;
 use function array_key_first;
 
+/**
+ * @since 1.19.60
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class SelectionBoxBlockComponent extends BlockComponent
 {
