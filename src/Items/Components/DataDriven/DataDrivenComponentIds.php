@@ -48,8 +48,8 @@ enum DataDrivenComponentIds : string
 	case REPAIRABLE = "minecraft:repairable";
 	case SHOOTER = "minecraft:shooter";
 	case STORAGE = "minecraft:storage_item";
-	case STORAGE_WEIGHT_LIMIT = "minecraft:storage_item_weight_limit";
-	case STORAGE_WEIGHT_MODIFIER = "minecraft:storage_item_weight_modifier";
+	case STORAGE_WEIGHT_LIMIT = "minecraft:storage_weight_limit";
+	case STORAGE_WEIGHT_MODIFIER = "minecraft:storage_weight_modifier";
 	case TAGS = "minecraft:tags";
 	case THROWABLE = "minecraft:throwable";
 	case USE_MODIFIERS = "minecraft:use_modifiers";

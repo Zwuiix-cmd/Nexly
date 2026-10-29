@@ -28,6 +28,9 @@ use pocketmine\nbt\tag\StringTag;
 
 class DurabilityThreshold
 {
+	/**
+	 * @param ?string $sound Custom sound names require format version 1.26.50 or later.
+	 */
 	public function __construct(
 		protected int $durability,
 		protected ?string $sound = null,
@@ -56,11 +59,11 @@ class DurabilityThreshold
 			->setTag("durability", new IntTag($this->durability));
 
 		if ($this->sound !== null) {
-			$nbt->setTag("sound", new StringTag($this->sound));
+			$nbt->setTag("sound_event", new StringTag($this->sound));
 		}
 
 		if ($this->particle !== null) {
-			$nbt->setTag("particle", new StringTag($this->particle));
+			$nbt->setTag("particle_type", new StringTag($this->particle));
 		}
 
 		return $nbt;

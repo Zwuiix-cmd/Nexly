@@ -29,11 +29,18 @@ use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;
 use function array_map;
 
+/**
+ * @since 1.21.20
+ */
 #[Attribute(Attribute::TARGET_CLASS)]
 class DurabilitySensorItemComponent extends DataDrivenItemComponent
 {
+	/**
+	 * @param ?string $soundEvent Custom sound names require format version 1.26.50 or later.
+	 */
 	public function __construct(
 		protected array $thresholds,
+		protected ?string $soundEvent = null,
 	) {
 		if (empty($this->thresholds)) {
 			throw new \InvalidArgumentException("Thresholds array cannot be empty.");
@@ -53,7 +60,13 @@ class DurabilitySensorItemComponent extends DataDrivenItemComponent
 	 */
 	public function toNBT() : CompoundTag
 	{
-		return CompoundTag::create()
+		$nbt = CompoundTag::create()
 			->setTag("durability_thresholds", new ListTag(array_map(fn (DurabilityThreshold $threshold) => $threshold->toNBT(), $this->thresholds), NBT::TAG_Compound));
+
+		if ($this->soundEvent !== null) {
+			$nbt->setString("sound_event", $this->soundEvent);
+		}
+
+		return $nbt;
 	}
 }
