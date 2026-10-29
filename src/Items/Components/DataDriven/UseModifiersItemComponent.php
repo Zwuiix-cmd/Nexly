@@ -35,9 +35,9 @@ use pocketmine\nbt\tag\StringTag;
 class UseModifiersItemComponent extends DataDrivenItemComponent
 {
 	/**
-	 * @param bool $emitVibrations Requires format version 1.21.120 or later.
-	 * @param ?string $startSound Custom sound names require format version 1.26.50 or later.
-	 * @param ?string $startUsing Requires format version 1.26.30 or later.
+	 * @param bool    $emitVibrations Requires format version 1.21.120 or later.
+	 * @param ?string $startSound     Custom sound names require format version 1.26.50 or later.
+	 * @param ?string $startUsing     Requires format version 1.26.30 or later.
 	 */
 	public function __construct(
 		protected float $duration,

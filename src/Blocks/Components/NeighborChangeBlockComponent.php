@@ -5,7 +5,7 @@
  * | \ | | _____  _| |_   _
  * |  \| |/ _ \ \/ / | | | |
  * | |\  |  __/>  <| | |_| |
- * |_| \_\___/_/\_\_|\__, |
+ * |_| \_|\___/_/\_\_|\__, |
  *                    |___/
  *
  * Nexly - A modern PocketMine-MP framework for custom blocks and items.

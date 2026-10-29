@@ -35,7 +35,7 @@ use pocketmine\nbt\tag\IntTag;
 class BlockEntityBlockComponent extends BlockComponent
 {
 	/**
-	 * @param bool $entityStorage Requires format version 1.26.60 and Upcoming Creator Features.
+	 * @param bool    $entityStorage  Requires format version 1.26.60 and Upcoming Creator Features.
 	 * @param ?string $containerTitle Requires format version 1.26.60 and Upcoming Creator Features.
 	 */
 	public function __construct(
